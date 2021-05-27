@@ -4,12 +4,12 @@ def int_func(text):
         err = None
         text_upd = None
         for i in range(len(text_list)):
-            try:
-                ord(text_list[i]) < 97 and ord(i) > 122
-            except TypeError:
+            if ord(text_list[i]) < 97 or ord(text_list[i]) > 122:
                 print('Вы ввели недопустимый символ')
                 err = 0
                 break
+            else:
+                continue
         if err == 0:
             raise SystemExit
         else:
