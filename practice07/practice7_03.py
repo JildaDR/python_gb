@@ -23,7 +23,6 @@ class Cell:
         row += f'{"*" * (self.__amount % value)}'
         return row
 
-        return self.value
 
     def __add__(self, other):
         return self.__amount + other.__amount
