@@ -18,8 +18,7 @@ class Data:
             raise MyException
         except MyException:
             print('Вы ввели недопустимое значение!')
-        finally:
-            return f'end program'
+        return f'end program'
 
 
 
